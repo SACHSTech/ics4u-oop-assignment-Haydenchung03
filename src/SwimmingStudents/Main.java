@@ -17,5 +17,13 @@ public class main {
   public void setStudent(People people){
     this.Supervisor = people;
   }
-  
+
+  public People getPeople(){
+    return Student;
+  }
+
+  public static void Main(String args[]){
+    System.out.println("Student");
+  }
+
 }
