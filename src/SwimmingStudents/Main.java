@@ -1,29 +1,23 @@
 package SwimmingStudents;
 
-public class main {
+import java.io.*;
+import java.util.*;
 
-  private People Student;
-  private People Teacher;
-  private People Supervisor;
+public class Main {
+  public static void main(String[] args) throws IOEXception {
 
-  public void setStudent(People people){
-    this.Student = people;
+    int intStudent;
+    int intTeacher;
+    int intSupervisor;
+
+    String strName;
+    String strProgram;
+    int intRoomNumber;
+    int intLevel;
+    int intLane;
+    int intAge;
+    
   }
-
-  public void setStudent(People people){
-    this.Teacher = people;
-  }
-
-  public void setStudent(People people){
-    this.Supervisor = people;
-  }
-
-  public People getPeople(){
-    return Student;
-  }
-
-  public static void Main(String args[]){
-    System.out.println("Student");
-  }
+ 
 
 }
