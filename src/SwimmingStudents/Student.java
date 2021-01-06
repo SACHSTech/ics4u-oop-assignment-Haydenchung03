@@ -4,8 +4,7 @@ import SwimmingStudents.*;
 
 public class Student{
 
-  private String strFirstName;
-  private String strLastName;
+  
   private int intLevel;
   private int intLaneNumber;
   private String strParent;

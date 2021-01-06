@@ -5,8 +5,7 @@ import java.lang.Math;
 
 public class Teacher{
   
-  private String strFirstName;
-  private String strLastName;
+  
   private int intLevel;
   private int intLaneNumber;
   private double dblPay;

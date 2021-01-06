@@ -6,17 +6,6 @@ import java.util.*;
 public class Main {
   public static void main(String[] args) throws IOEXception {
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-    
-    int intStudent;
-    int intTeacher;
-    int intSupervisor;
-
-    String strName;
-    String strProgram;
-    int intRoomNumber;
-    int intLevel;
-    int intLane;
-    int intAge;
 
     String strOption;
     boolean blnOption = true;
@@ -30,13 +19,13 @@ public class Main {
         System.out.println("What is your last name");
       }else if(strOption.equalsIgnoreCase("teacher")) {
         System.out.println("What is your fire name");
-        System.out.println("WHat is your last name");
+        System.out.println("What is your last name");
       }else if(strOption.equalsIgnoreCase("supervisor")) {
         System.out.println("What is your name");
-        System.out.println("WHat is your last name");
+        System.out.println("What is your last name");
       }else if(strOption.equalsIgnoreCase("parent")) {
         System.out.println("What is your name");
-        System.out.println("WHat is your last name");
+        System.out.println("What is your last name");
       }else if(strOtpion.equals("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
