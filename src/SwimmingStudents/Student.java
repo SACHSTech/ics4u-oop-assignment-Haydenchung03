@@ -2,18 +2,20 @@ package SwimmingStudents;
 
 import SwimmingStudents.*;
 
-public class Teacher{
-  
+public class Student{
+
   private String strFirstName;
   private String strLastName;
   private int intLevel;
   private int intLaneNumber;
-
-  public Teacher(String firstName, String lastName, int Level, int intLane){
+  private String strParent;
+  
+  public Student(String firstName, String lastName, int Level, int intLane, String Parent){
     this.strFirstName = firstName;
     this.strLastName = lastName;
     this.intLevel = Level;
     this.intLaneNumber = intLane;
+    this.strParent = Parent;
   }
 
   public String getFirstName(){
@@ -30,5 +32,9 @@ public class Teacher{
   
   public int intGetLane() {
     return intLaneNumber;
+  }
+
+  public String getParentName() {
+    return strParent; 
   }
 }
