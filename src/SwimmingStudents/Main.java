@@ -24,15 +24,19 @@ public class Main {
     System.out.println("Hi, welcome to swimming pool online orginizer");
     System.out.println("Are you a: student, teacher, supervisor or parent");
     strOption = keyboard.readLine();
-    while(blnOption = true) {
+    while(blnOption == true) {
       if(strOption.equalsIgnoreCase("student")) {
         System.out.println("What is your name");
+        System.out.println("What is your last name");
       }else if(strOption.equalsIgnoreCase("teacher")) {
-        System.out.println("What is your name");
+        System.out.println("What is your fire name");
+        System.out.println("WHat is your last name");
       }else if(strOption.equalsIgnoreCase("supervisor")) {
         System.out.println("What is your name");
+        System.out.println("WHat is your last name");
       }else if(strOption.equalsIgnoreCase("parent")) {
         System.out.println("What is your name");
+        System.out.println("WHat is your last name");
       }else if(strOtpion.equals("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
