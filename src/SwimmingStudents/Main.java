@@ -144,6 +144,7 @@ public class Main {
           intAge = Integer.parseInt(keyboard.readLine());
           Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
           System.out.println(Student1);
+          intRegistered++;
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       // Runs code if user is a worker
