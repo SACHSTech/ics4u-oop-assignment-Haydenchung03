@@ -15,9 +15,9 @@ public class Parent extends People {
     }
   }
 
-  //public static double getPrice() {
-    //return dblPrice;
-  //}
+  public static double getPrice() {
+    return dblPrice;
+  }
 
   public String toString() {
     System.out.println("Your child's name is: " + this.getFirstName() + " " + this.getLastName());

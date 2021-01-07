@@ -20,6 +20,8 @@ public class Student extends People {
       strInstructor = "Billy";
     }else if(Level == 10) {
       strInstructor = "Jack";
+    }else if(Level == 1) {
+      strInstructor = "Kanye";
     }
   }
 

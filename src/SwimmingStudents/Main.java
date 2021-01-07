@@ -4,15 +4,23 @@ import SwimmingStudents.*;
 
 import java.io.*;
 import java.util.*;
-
+/**
+* Program that allows users to find information about a worker or student
+* Allows a person to register a person into a pool
+* @author: H.Chung
+*
+*/
 public class Main {
+  
   public static void main(String[] args) throws IOException {
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-
+    
+    // Initialize objects
     Student Student1;
     Parent Parent2;
     Worker Worker3;
 
+    // Initialize variables
     String strOption;
     boolean blnOption = true;
     String strRegister;
@@ -23,7 +31,9 @@ public class Main {
     String strLastName;
     int intAge;
 
+    // Ask user questions to print
     while(blnOption == true) {
+
       System.out.println("Hi, welcome to swimming pool online orginizer");
       System.out.println("Are you a student, worker or parent?");
       System.out.println("Type done if you are finished");
@@ -129,7 +139,7 @@ public class Main {
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       }else if(strOption.equalsIgnoreCase("worker")) {
-        System.out.println("Type a number between 1-8 to access information in our system");
+        System.out.println("Type a number between 1-9 to access information in our system");
         intWorker = Integer.parseInt(keyboard.readLine());
         if(intWorker == 1) {
          Worker3 = new Worker("Tommy", "Smithy", 0, 0, "lifeguard");
@@ -154,6 +164,9 @@ public class Main {
          System.out.println(Worker3);
         }else if(intWorker == 8) {
          Worker3 = new Worker("Peke", "Chin", 5, 7, "supervisor");
+         System.out.println(Worker3);
+        }else if(intWorker == 9) {
+         Worker3 = new Worker("Kanye", "West", 1, 6, "instructor");
          System.out.println(Worker3);
         }
       }else if(strOption.equalsIgnoreCase("Done")) {
