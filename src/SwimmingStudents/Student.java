@@ -10,9 +10,9 @@ public class Student extends People {
   public Student(String firstName, String lastName, int Level, int intLane, int Age){
     super(firstName, lastName, Level, intLane);
     this.intAge = Age;
-    if(Level = 5) {
+    if(Level == 5) {
       strInstructor = "Hayden Chung";
-    }else if(Level = 6) {
+    }else if(Level == 6) {
       strInstructor = "Tyler";
     }
   }
