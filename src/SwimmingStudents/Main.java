@@ -48,6 +48,8 @@ public class Main {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
           System.out.println("Type a number between 1-10 to find out information about a member");
           intMember = Integer.parseInt(keyboard.readLine());
+          // Print out information depending on what number was typed in
+          // Goes into student or parent class, depending on if the user is a student or a parent
           if(intMember == 1) {
             Student1 = new Student("John", "Lau", 5, 2, 10);
             Parent2 = new Parent("John", "Lau", 5, 2);
@@ -128,7 +130,10 @@ public class Main {
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
             }
+          }else {
+            System.out.println("Invalid. You will be bought back to the menu.");
           }
+        // If user says no, they may register a student
         }else if(strRegister.equalsIgnoreCase("no")) {
           System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
           System.out.println("What is your first name?");
@@ -141,9 +146,11 @@ public class Main {
           System.out.println(Student1);
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
+      // Runs code if user is a worker
       }else if(strOption.equalsIgnoreCase("worker")) {
         System.out.println("Type a number between 1-9 to access information in our system");
         intWorker = Integer.parseInt(keyboard.readLine());
+        // Type a number to get information on a worker
         if(intWorker == 1) {
          Worker3 = new Worker("Tommy", "Smithy", 0, 0, "lifeguard");
          System.out.println(Worker3);
@@ -171,10 +178,14 @@ public class Main {
         }else if(intWorker == 9) {
          Worker3 = new Worker("Kanye", "West", 1, 6, "instructor");
          System.out.println(Worker3);
+        }else {
+          System.out.println("Not an option. You will now go back to the menu.");
         }
+      // Quit program is done is typed in
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Program has quit");
         blnOption = false;
+      // If no other option is typed, program loops again
       }else {
         System.out.println("Not an Option");
       }
