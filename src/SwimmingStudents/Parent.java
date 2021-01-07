@@ -2,11 +2,11 @@ package SwimmingStudents;
 
 import SwimmingStudents.*;
 
-public class Parents extends People {
+public class Parent extends People {
 
   private double dblPrice;
 
-  public Parents(String firstName, String lastName, int Level, int intLane){
+  public Parent(String firstName, String lastName, int Level, int intLane){
     super(firstName, lastName, Level, intLane);
     if(Level >= 5 && Level <= 7 ){
       dblPrice = 400.0;

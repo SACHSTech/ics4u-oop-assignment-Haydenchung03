@@ -35,8 +35,12 @@ public class Main {
           intMember = Integer.parseInt(keyboard.readLine());
           if(intMember == 1) {
             Student one = new Student("John", "Lau", 5, 2, 10);
-            Parents 
-            System.out.println(one);
+            Parent two = new Parent("John", "Lau", 5, 2, 10);
+            if(strOption.equalsIgnoreCase("student")){
+              System.out.println(one);
+            }else if(strOption.equalsIgnoreCase("parent")){
+              System.out.println(two);
+            }
           }else if(intMember == 2) {
             Student one = new Student("Tom", "Cruise", 5, 2, 13); 
             System.out.println(one);
@@ -82,28 +86,28 @@ public class Main {
         intWorker = Integer.parseInt(keyboard.readLine());
         if(intWorker == 1) {
          Worker three = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 2) {
          Worker three = new Worker("Hayden", "Chung", 5, 7, "instructor and lifeguard");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 3) {
          Worker three = new Worker("Tyler", "Polly", 5, 7, "instructor and lifeguard");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 4) {
          Worker three = new Worker("Elizabeth", "Scotch", 5, 7, "supervisor");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 5) {
          Worker three = new Worker("Billy", "Curry", 5, 7, "instructor");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 6) {
          Worker three = new Worker("Jack", "Smith", 5, 7, "lifeguard");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 7) {
          Worker three = new Worker("Dominic", "SR", 5, 7, "instructor");
-         System.out.println(two);
+         System.out.println(three);
         }else if(intWorker == 8) {
          Worker three = new Worker("Peke", "Chin", 5, 7, "supervisor");
-         System.out.println(two);
+         System.out.println(three);
         }
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
