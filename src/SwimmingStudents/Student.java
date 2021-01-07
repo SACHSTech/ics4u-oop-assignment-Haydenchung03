@@ -2,7 +2,7 @@ package SwimmingStudents;
 
 import SwimmingStudents.*;
 
-public class Student{
+public class Student extends People extends SwimClass{
 
   private int intAge;
   
@@ -11,7 +11,7 @@ public class Student{
     this.intAge = Age;
   }
 
-  public int getAge() {
-    return intAge;
+  public String toString() {
+    return this.getFirstName() + this.getLastName();
   }
 }
