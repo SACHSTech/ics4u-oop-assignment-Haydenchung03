@@ -31,16 +31,19 @@ public class Main {
     String strLastName;
     int intAge;
 
-    // Ask user questions to print
+    // Ask user if they are a student, worker or parent
     while(blnOption == true) {
-
+      // Instructions
       System.out.println("Hi, welcome to swimming pool online orginizer");
       System.out.println("Are you a student, worker or parent?");
       System.out.println("Type done if you are finished");
       strOption = keyboard.readLine();
+      // if student or parent was typed, execute this if statement
       if(strOption.equalsIgnoreCase("student") || strOption.equalsIgnoreCase("parent")) {
         System.out.println("Have you registered at our community center before? Type yes or no");
         strRegister = keyboard.readLine();
+        // If you login as a student, print out information including age
+        // If you login as a parent, print out information including price of course
         if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
           System.out.println("Type a number between 1-10 to find out information about a member");
