@@ -14,6 +14,7 @@ public class Main {
     String strRegister;
     int intRegistered = 10;
     int intMember;
+    int intWorker;
     String strFirstName;
     String strLastName;
     int intAge;
@@ -74,7 +75,11 @@ public class Main {
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       }else if(strOption.equalsIgnoreCase("worker")) {
-       System.out.println("Type a number between 1-7 to access information in our system");
+       System.out.println("Type a number between 1-10 to access information in our system");
+       intWorker = Integer.parseInt(keyboard.readLine());
+       if(intWorker == 1) {
+         
+       }
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
