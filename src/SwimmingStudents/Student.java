@@ -5,6 +5,7 @@ import SwimmingStudents.*;
 public class Student extends People {
 
   private int intAge;
+  private String strInstructor;
   
   public Student(String firstName, String lastName, int Level, int intLane, int Age){
     super(firstName, lastName, Level, intLane);

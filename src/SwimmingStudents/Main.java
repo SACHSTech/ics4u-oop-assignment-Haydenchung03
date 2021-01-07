@@ -128,22 +128,22 @@ public class Main {
         System.out.println("Type a number between 1-8 to access information in our system");
         intWorker = Integer.parseInt(keyboard.readLine());
         if(intWorker == 1) {
-         Worker three = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         Worker three = new Worker("Tommy", "Smithy", 0, 0, "lifeguard");
          System.out.println(three);
         }else if(intWorker == 2) {
-         Worker three = new Worker("Hayden", "Chung", 5, 7, "instructor and lifeguard");
+         Worker three = new Worker("Hayden", "Chung", 5, 2, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 3) {
-         Worker three = new Worker("Tyler", "Polly", 5, 7, "instructor and lifeguard");
+         Worker three = new Worker("Tyler", "Polly", 6, 4, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 4) {
-         Worker three = new Worker("Elizabeth", "Scotch", 5, 7, "supervisor");
+         Worker three = new Worker("Elizabeth", "Scotch", 0, 0, "supervisor");
          System.out.println(three);
         }else if(intWorker == 5) {
-         Worker three = new Worker("Billy", "Curry", 5, 7, "instructor");
+         Worker three = new Worker("Billy", "Curry", 9, 3, "instructor");
          System.out.println(three);
         }else if(intWorker == 6) {
-         Worker three = new Worker("Jack", "Smith", 5, 7, "lifeguard");
+         Worker three = new Worker("Jack", "Smith", 10, 1, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 7) {
          Worker three = new Worker("Dominic", "SR", 5, 7, "instructor");

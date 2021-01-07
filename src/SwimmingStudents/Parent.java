@@ -4,7 +4,7 @@ import SwimmingStudents.*;
 
 public class Parent extends People {
 
-  private double dblPrice;
+  private static double dblPrice = 0;
 
   public Parent(String firstName, String lastName, int Level, int intLane){
     super(firstName, lastName, Level, intLane);
@@ -13,6 +13,10 @@ public class Parent extends People {
     }else if(Level == 9 && Level == 10 ){
       dblPrice = 450.0;
     }
+  }
+
+  public static double getPrice() {
+    return dblPrice;
   }
 
   public String toString() {
