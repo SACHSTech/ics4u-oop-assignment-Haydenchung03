@@ -9,7 +9,7 @@ public class Student extends People {
   // Class variables
   private static String strInstructor = " ";
   
-   /**
+  /**
   * Constructor: Creates a new student Instance
   * @param firstName - person's first name
   * @param lastName - person's last Name
@@ -17,6 +17,7 @@ public class Student extends People {
   * @param intLane - person's lane number
   * @param Age - person's age
   */
+
   public Student(String firstName, String lastName, int Level, int intLane, int Age) {
     super(firstName, lastName, Level, intLane);
     this.intAge = Age;
@@ -52,7 +53,6 @@ public class Student extends People {
     return intAge;
   }
 
-
   /**
   * Turning information to student to String
   * @return all information in student class
@@ -61,7 +61,7 @@ public class Student extends People {
     System.out.println("Your full name is: " + this.getFirstName() + " " + this.getLastName());
     System.out.println("Your Level is: " + this.getLevel());
     System.out.println("The Lane you are swimming is: " + this.getLane());
-    System.out.println("Your instructor is: "+strInstructor); 
-    return "Your Age is: " + this.intAge;
+    System.out.println("Your instructor is: " + strInstructor); 
+    return "Your Age is: " + intAge;
   }
 }

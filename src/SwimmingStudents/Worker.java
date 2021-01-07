@@ -7,13 +7,20 @@ import java.lang.Math;
 public class Worker extends People{
   
 
-  
+  // Instance variable
   private String strPosition;
+  // Class variable
   private static Double dblPay;
 
-  
-
-   public Worker(String firstName, String lastName, int Level, int intLane, String Position){
+  /**
+  * Constructor: Creates a new student Instance
+  * @param firstName - person's first name
+  * @param lastName - person's last Name
+  * @param Level - person's level in Swimming 
+  * @param intLane - person's lane number
+  * @param Position - worker's position
+  */
+  public Worker(String firstName, String lastName, int Level, int intLane, String Position){
     super(firstName, lastName, Level, intLane);
     this.strPosition = Position;
     if(strPosition.equalsIgnoreCase("supervisor")) {
@@ -27,10 +34,26 @@ public class Worker extends People{
     }
   }
 
+  /**
+  * Getter method for dblPay
+  * @return worker's pay
+  */
   public static double getPay() {
     return dblPay;
   }
+
+  /**
+  * Getter method for strPosition
+  * @return worker's position
+  */
+  public String getPosition() {
+    return strPosition;
+  }
   
+   /**
+  * Turning information to worker to String
+  * @return all information in worker class
+  */
   public String toString() {
     System.out.println("Your full name is: " + this.getFirstName() + " " + this.getLastName());
     if(strPosition.equalsIgnoreCase("instructor") || strPosition.equalsIgnoreCase("instructor and lifeguard")) {
