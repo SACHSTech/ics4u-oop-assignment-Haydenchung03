@@ -182,7 +182,7 @@ public class Organizer {
         }else {
           System.out.println("Not an option. You will now go back to the menu.");
         }
-      // Quit program is done is typed in
+      // Quit program if done is typed in
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Program has quit");
         blnOption = false;
