@@ -13,6 +13,7 @@ public class Main {
     boolean blnOption = true;
     String strRegister;
     int intRegistered = 10;
+    int intMember;
     while(blnOption == true) {
       System.out.println("Hi, welcome to swimming pool online orginizer");
       System.out.println("Are you a: student or worker?");
@@ -22,13 +23,15 @@ public class Main {
         strRegister = keyboard.readLine();
         if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
-          System.out.println("Type a number between 1-10 to find out infor")
+          System.out.println("Type a number between 1-10 to find out information about a member");
+          intMember = Integer.parseInt(keyboard.readLine());
+          if(intMember == 1) {
+            Student one = new Student("John", "Lau", 5, 2, 10); 
+            System.out.println(one);
+          }
         }
       }else if(strOption.equalsIgnoreCase("teacher")) {
-        System.out.println("What is your fire name");
-        strFirstName = keyboard.readLine();
-        System.out.println("What is your last name");
-        strLastName = keyboard.readLine();
+       
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
