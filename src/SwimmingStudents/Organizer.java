@@ -33,21 +33,9 @@ public class Organizer {
     String strLastName1 = "";
     String strFirstName2 = "";
     String strLastName2 = "";
-    String strFirstName3 = "";
-    String strLastName3 = "";
-    String strFirstName4 = "";
-    String strLastName4 = "";
-    String strFirstName5 = "";
-    String strLastName5 = "";
-    String strFirstName6 = "";
-    String strLastName6 = "";
     int intAge = 0;
     int intAge1 = 0;
     int intAge2 = 0;
-    int intAge3 = 0;
-    int intAge4 = 0;
-    int intAge5 = 0;
-    int intAge6 = 0;
 
     // Ask user if they are a student, worker or parent
     while(blnOption == true) {
@@ -71,14 +59,13 @@ public class Organizer {
           strLastName = keyboard.readLine();
           System.out.println("What is your age?");
           intAge = Integer.parseInt(keyboard.readLine());
-          if(intRegistered <= 15) {
+          if(intRegistered <= 10) {
             Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
             System.out.println(Student1);
-             intRegistered++;
+            intRegistered++;
           }else {
             System.out.println("Sorry, there are too many people registered. Try again next time");
           }
-          System.out.println("You will not be visable on the list until you attend the first lesson");
         }else if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
           System.out.println("Type a number between 1-" + intRegistered + " to find out information about a pre registered member");
@@ -184,83 +171,9 @@ public class Organizer {
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
             }
-          }else if(intMember == 12) {
-            strFirstName3 = strFirstName4;
-            strFirstName4 = strFirstName;
-            strLastName3 = strLastName4;
-            strLastName4 = strLastName;
-            intAge3 = intAge4;
-            intAge4 = intAge;
-            if(intRegistered == 12) {
-              Student1 = new Student(strFirstName4, strLastName4, 1, 1, intAge4); 
-              Parent2 = new Parent(strFirstName4, strLastName4, 1, 1);
-            }else {
-              Student1 = new Student(strFirstName3, strLastName3, 1, 1, intAge3); 
-              Parent2 = new Parent(strFirstName3, strLastName3, 1, 1);
-            }
-            if(strOption.equalsIgnoreCase("student")){
-              System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
-              System.out.println(Parent2);
-            }
-          }else if(intMember == 13) {
-            strFirstName5 = strFirstName6;
-            strFirstName6 = strFirstName;
-            strLastName4 = strLastName6;
-            strLastName6 = strLastName;
-            intAge5 = intAge6;
-            intAge6 = intAge;
-            if(intRegistered == 13) {
-              Student1 = new Student(strFirstName6, strLastName6, 1, 1, intAge6); 
-              Parent2 = new Parent(strFirstName6, strLastName6, 1, 1);
-            }else {
-              Student1 = new Student(strFirstName5, strLastName5, 1, 1, intAge5); 
-              Parent2 = new Parent(strFirstName5, strLastName5, 1, 1);
-            }
-            if(strOption.equalsIgnoreCase("student")){
-              System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
-              System.out.println(Parent2);
-            }
-          }else if(intMember == 14) {
-            strFirstName7 = strFirstName8;
-            strFirstName8 = strFirstName;
-            strLastName7 = strLastName8;
-            strLastName8 = strLastName;
-            intAge7 = intAge8;
-            intAge8 = intAge;
-            if(intRegistered == 14) {
-              Student1 = new Student(strFirstName8, strLastName8, 1, 1, intAge8); 
-              Parent2 = new Parent(strFirstName8, strLastName8, 1, 1);
-            }else {
-              Student1 = new Student(strFirstName7, strLastName7, 1, 1, intAge7); 
-              Parent2 = new Parent(strFirstName7, strLastName7, 1, 1);
-            }
-            if(strOption.equalsIgnoreCase("student")){
-              System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
-              System.out.println(Parent2);
-            }
-          }
           }else {
             System.out.println("Invalid. You will be bought back to the menu.");
           }
-        }else if(strRegister.equalsIgnoreCase("no")) {
-          System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
-          System.out.println("What is your first name?");
-          strFirstName = keyboard.readLine();
-          System.out.println("What is your last name?");
-          strLastName = keyboard.readLine();
-          System.out.println("What is your age?");
-          intAge = Integer.parseInt(keyboard.readLine());
-          if(intRegistered < 15) {
-            Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
-            System.out.println(Student1);
-            intRegistered++;
-          }else {
-            System.out.println("Sorry, there are too many people registered. Try again next time");
-          }
-          System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       // Runs code if user is a worker
       }else if(strOption.equalsIgnoreCase("worker")) {

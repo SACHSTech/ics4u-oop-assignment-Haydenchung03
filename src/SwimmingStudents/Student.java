@@ -35,7 +35,7 @@ public class Student extends People {
       strInstructor = "Jack";
     }else if(Level == 1) {
       strInstructor = "Kanye";
-      intStudents++;
+      intStudents = 11;
     }
   }
 
@@ -73,7 +73,7 @@ public class Student extends People {
     System.out.println("Your Level is: " + this.getLevel());
     System.out.println("The Lane you are swimming is: " + this.getLane());
     System.out.println("Your instructor is: " + strInstructor); 
-    System.out.println("There are currentely this number of students: " + intStudents);
+    System.out.println("This number is your number inputed in the system: " + intStudents);
     return "Your Age is: " + intAge;
   }
 }
