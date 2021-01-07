@@ -16,6 +16,7 @@ public class Parent extends People {
   */
   public Parent(String firstName, String lastName, int Level, int intLane){
     super(firstName, lastName, Level, intLane);
+    // Conditions to see the value of dblPrice
     if(Level >= 5 && Level <= 7 ){
       dblPrice = 400.0;
     }else if(Level == 9 && Level == 10 ){
