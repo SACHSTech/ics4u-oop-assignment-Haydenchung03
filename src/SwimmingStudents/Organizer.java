@@ -35,7 +35,6 @@ public class Organizer {
     while(blnOption == true) {
       // Instructions
       System.out.println("Hi, welcome to swimming pool online orginizer");
-      System.out.println("If you want to register, enter student");
       System.out.println("Are you a student, worker or parent?");
       System.out.println("Type done if you are finished");
       strOption = keyboard.readLine();

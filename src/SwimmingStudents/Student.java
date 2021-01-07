@@ -73,7 +73,7 @@ public class Student extends People {
     System.out.println("Your Level is: " + this.getLevel());
     System.out.println("The Lane you are swimming is: " + this.getLane());
     System.out.println("Your instructor is: " + strInstructor); 
-    System.out.println("This number is your number inputed in the system: " + intStudents);
+    System.out.println("Total number of students is: " + intStudents);
     return "Your Age is: " + intAge;
   }
 }
