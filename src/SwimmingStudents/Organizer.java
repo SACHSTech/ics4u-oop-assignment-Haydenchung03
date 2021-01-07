@@ -52,6 +52,7 @@ public class Organizer {
         // If you login as a parent, print out information including price of course
         // If user says no, they may register a student
         if(strRegister.equalsIgnoreCase("no")) {
+          // Registering a student into the system
           System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
           System.out.println("What is your first name?");
           strFirstName = keyboard.readLine();
@@ -59,12 +60,13 @@ public class Organizer {
           strLastName = keyboard.readLine();
           System.out.println("What is your age?");
           intAge = Integer.parseInt(keyboard.readLine());
+          // Condition will only work once to make sure you can only register once
           if(intRegistered <= 10) {
             Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
             System.out.println(Student1);
             intRegistered++;
           }else {
-            System.out.println("Sorry, there are too many people registered. Try again next time");
+            System.out.println("Sorry, you can only register one student currentely due to covid restrictions. Try again next time.");
           }
         }else if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
@@ -159,14 +161,11 @@ public class Organizer {
             strLastName2 = strLastName;
             intAge1 = intAge2;
             intAge2 = intAge;
-            if(intRegistered == 11) {
-              Student1 = new Student(strFirstName2, strLastName2, 1, 1, intAge2); 
-              Parent2 = new Parent(strFirstName2, strLastName2, 1, 1); 
-            }else {
-              Student1 = new Student(strFirstName1, strLastName1, 1, 1, intAge1); 
-              Parent2 = new Parent(strFirstName1, strLastName1, 1, 1); 
-            }
-            if(strOption.equalsIgnoreCase("student")){
+            Student1 = new Student(strFirstName2, strLastName2, 1, 1, intAge2); 
+            Parent2 = new Parent(strFirstName2, strLastName2, 1, 1); 
+            if(intRegistered != 11){
+              System.out.println("Slot is empty");
+            }else if(strOption.equalsIgnoreCase("student")){
               System.out.println(Student1);
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
