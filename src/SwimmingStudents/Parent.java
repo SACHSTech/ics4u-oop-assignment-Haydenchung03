@@ -19,6 +19,6 @@ public class Parent extends People {
     System.out.println("Your child's name is: " + this.getFirstName() + " " + this.getLastName());
     System.out.println("Your child's level is: " + this.getLevel());
     System.out.println("Your child is in lane: " + this.getLane());
-    return "The price of this course is: " + dblPrice;
+    return "The price of this course is: $" + dblPrice;
   }
 }
