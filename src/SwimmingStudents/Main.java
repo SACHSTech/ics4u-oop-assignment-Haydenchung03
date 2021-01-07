@@ -78,8 +78,21 @@ public class Main {
        System.out.println("Type a number between 1-10 to access information in our system");
        intWorker = Integer.parseInt(keyboard.readLine());
        if(intWorker == 1) {
-         
-       }
+         Worker two = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         System.out.println(two);
+        }else if(intWorker == 1) {
+         Worker two = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         System.out.println(two);
+        }else if(intWorker == 1) {
+         Worker two = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         System.out.println(two);
+        }else if(intWorker == 1) {
+         Worker two = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         System.out.println(two);
+        }else if(intWorker == 1) {
+         Worker two = new Worker("Tommy", "Smithy", 5, 7, "lifeguard");
+         System.out.println(two);
+        }
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
