@@ -29,18 +29,13 @@ public class Organizer {
     int intWorker;
     String strFirstName = "";
     String strLastName = "";
-    String strFirstName1 = "";
-    String strLastName1 = "";
-    String strFirstName2 = "";
-    String strLastName2 = "";
     int intAge = 0;
-    int intAge1 = 0;
-    int intAge2 = 0;
 
     // Ask user if they are a student, worker or parent
     while(blnOption == true) {
       // Instructions
       System.out.println("Hi, welcome to swimming pool online orginizer");
+      System.out.println("If you want to register, enter student");
       System.out.println("Are you a student, worker or parent?");
       System.out.println("Type done if you are finished");
       strOption = keyboard.readLine();
@@ -54,6 +49,7 @@ public class Organizer {
         if(strRegister.equalsIgnoreCase("no")) {
           // Registering a student into the system
           System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
+          System.out.println("All beginner classes are free");
           System.out.println("What is your first name?");
           strFirstName = keyboard.readLine();
           System.out.println("What is your last name?");
@@ -155,14 +151,8 @@ public class Organizer {
               System.out.println(Parent2);
             }
           }else if(intMember == 11) {
-            strFirstName1 = strFirstName2;
-            strFirstName2 = strFirstName;
-            strLastName1 = strLastName2;
-            strLastName2 = strLastName;
-            intAge1 = intAge2;
-            intAge2 = intAge;
-            Student1 = new Student(strFirstName2, strLastName2, 1, 1, intAge2); 
-            Parent2 = new Parent(strFirstName2, strLastName2, 1, 1); 
+            Student1 = new Student(strFirstName, strLastName, 1, 1, intAge); 
+            Parent2 = new Parent(strFirstName, strLastName, 1, 1); 
             if(intRegistered != 11){
               System.out.println("Slot is empty");
             }else if(strOption.equalsIgnoreCase("student")){
