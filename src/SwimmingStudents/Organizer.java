@@ -27,9 +27,21 @@ public class Organizer {
     int intRegistered = 10;
     int intMember;
     int intWorker;
-    String strFirstName;
-    String strLastName;
-    int intAge;
+    String strFirstName = "";
+    String strLastName = "";
+    String strFirstName1 = "";
+    String strLastName1 = "";
+    String strFirstName2 = "";
+    String strLastName2 = "";
+    String strFirstName3 = "";
+    String strLastName3 = "";
+    String strFirstName4 = "";
+    String strLastName4 = "";
+    int intAge = 0;
+    int intAge1 = 0;
+    int intAge2 = 0;
+    int intAge3 = 0;
+    int intAge4 = 0;
 
     // Ask user if they are a student, worker or parent
     while(blnOption == true) {
@@ -44,9 +56,26 @@ public class Organizer {
         strRegister = keyboard.readLine();
         // If you login as a student, print out information including age
         // If you login as a parent, print out information including price of course
-        if(strRegister.equalsIgnoreCase("yes")) {
+        // If user says no, they may register a student
+        if(strRegister.equalsIgnoreCase("no")) {
+          System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
+          System.out.println("What is your first name?");
+          strFirstName = keyboard.readLine();
+          System.out.println("What is your last name?");
+          strLastName = keyboard.readLine();
+          System.out.println("What is your age?");
+          intAge = Integer.parseInt(keyboard.readLine());
+          if(intRegistered <= 15) {
+            Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
+            System.out.println(Student1);
+             intRegistered++;
+          }else {
+            System.out.println("Sorry, there are too many people registered. Try again next time");
+          }
+          System.out.println("You will not be visable on the list until you attend the first lesson");
+        }else if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
-          System.out.println("Type a number between 1-10 to find out information about a pre registered member");
+          System.out.println("Type a number between 1-" + intRegistered + " to find out information about a pre registered member");
           intMember = Integer.parseInt(keyboard.readLine());
           // Print out information depending on what number was typed in
           // Goes into student or parent class, depending on if the user is a student or a parent
@@ -130,10 +159,37 @@ public class Organizer {
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
             }
+          }else if(intMember == 11) {
+            strFirstName1 = strFirstName2;
+            strFirstName2 = strFirstName;
+            strLastName1 = strLastName2;
+            strLastName2 = strLastName;
+            intAge1 = intAge2;
+            intAge2 = intAge;
+            Student1 = new Student(strFirstName1, strLastName1, 1, 1, intAge1); 
+            Parent2 = new Parent(strFirstName1, strLastName1, 1, 1); 
+            if(strOption.equalsIgnoreCase("student")){
+              System.out.println(Student1);
+            }else if(strOption.equalsIgnoreCase("parent")){
+              System.out.println(Parent2);
+            }
+          }else if(intMember == 12) {
+            strFirstName3 = strFirstName4;
+            strFirstName4 = strFirstName;
+            strLastName3 = strLastName4;
+            strLastName4 = strLastName;
+            intAge3 = intAge4;
+            intAge4 = intAge;
+            Student1 = new Student(strFirstName3, strLastName3, 1, 1, intAge3); 
+            Parent2 = new Parent(strFirstName3, strLastName3, 1, 1); 
+            if(strOption.equalsIgnoreCase("student")){
+              System.out.println(Student1);
+            }else if(strOption.equalsIgnoreCase("parent")){
+              System.out.println(Parent2);
+            }
           }else {
             System.out.println("Invalid. You will be bought back to the menu.");
           }
-        // If user says no, they may register a student
         }else if(strRegister.equalsIgnoreCase("no")) {
           System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
           System.out.println("What is your first name?");
@@ -142,8 +198,12 @@ public class Organizer {
           strLastName = keyboard.readLine();
           System.out.println("What is your age?");
           intAge = Integer.parseInt(keyboard.readLine());
-          Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
-          System.out.println(Student1);
+          if(intRegistered < 15) {
+            Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
+            System.out.println(Student1);
+          }else {
+            System.out.println("Sorry, there are too many people registered. Try again next time");
+          }
           intRegistered++;
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
