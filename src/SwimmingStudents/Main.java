@@ -17,8 +17,6 @@ public class Main {
     int intWorker;
     String strFirstName;
     String strLastName;
-    String strFirstName1;
-    String strLastName1;
     int intAge;
 
     while(blnOption == true) {
@@ -155,7 +153,7 @@ public class Main {
          System.out.println(three);
         }
       }else if(strOption.equalsIgnoreCase("Done")) {
-        System.out.println("Goodbye!");
+        System.out.println("Thank you!");
         blnOption = false;
       }
     }
