@@ -10,7 +10,7 @@ import java.util.*;
 * @author: H.Chung
 *
 */
-public class Main {
+public class Organizer {
   
   public static void main(String[] args) throws IOException {
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
@@ -46,7 +46,7 @@ public class Main {
         // If you login as a parent, print out information including price of course
         if(strRegister.equalsIgnoreCase("yes")) {
           System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
-          System.out.println("Type a number between 1-10 to find out information about a member");
+          System.out.println("Type a number between 1-10 to find out information about a pre registered member");
           intMember = Integer.parseInt(keyboard.readLine());
           // Print out information depending on what number was typed in
           // Goes into student or parent class, depending on if the user is a student or a parent
