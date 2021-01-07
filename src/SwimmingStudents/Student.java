@@ -5,11 +5,16 @@ import SwimmingStudents.*;
 public class Student extends People {
 
   private int intAge;
-  private String strInstructor;
+  private static String strInstructor = " ";
   
   public Student(String firstName, String lastName, int Level, int intLane, int Age){
     super(firstName, lastName, Level, intLane);
     this.intAge = Age;
+    if(Level = 5) {
+      strInstructor = "Hayden Chung";
+    }else if(Level = 6) {
+      strInstructor = "Tyler";
+    }
   }
 
   public String toString() {
