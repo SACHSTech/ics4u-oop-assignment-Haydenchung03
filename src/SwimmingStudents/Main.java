@@ -11,19 +11,19 @@ public class Main {
 
     String strOption;
     boolean blnOption = true;
-    String strFirstName;
-    String strLastName;
+    String strRegister;
+    int intRegistered = 10;
     while(blnOption == true) {
       System.out.println("Hi, welcome to swimming pool online orginizer");
       System.out.println("Are you a: student or worker?");
       strOption = keyboard.readLine();
       if(strOption.equalsIgnoreCase("student")) {
-        System.out.println("What is your first name");
-        strFirstName = keyboard.readLine();
-        System.out.println("What is your last name");
-        strLastName = keyboard.readLine();
-        Student Hayden = new Student(strFirstName, strLastName, 5, 4, 17);
-        System.out.println(Hayden);
+        System.out.println("Have you registered at our community center before?");
+        strRegister = keyboard.readLine();
+        if(strRegister.equalsIgnoreCase("yes")) {
+          System.out.println("There are currentely " + intRegistered + " people registered within our swimming pool");
+          System.out.println("Type a number between 1-10 to find out infor")
+        }
       }else if(strOption.equalsIgnoreCase("teacher")) {
         System.out.println("What is your fire name");
         strFirstName = keyboard.readLine();
