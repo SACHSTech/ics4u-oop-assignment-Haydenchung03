@@ -4,25 +4,20 @@ import SwimmingStudents.*;
 
 public class Student{
 
-  
+  private int intAge;
   private int intLevel;
   private int intLaneNumber;
   private String strParent;
   
-  public Student(String firstName, String lastName, int Level, int intLane, String Parent){
-    this.strFirstName = firstName;
-    this.strLastName = lastName;
+  public Student(String firstName, String lastName, int Level, int intLane, String Parent, int Age){
+    this.intAge = Age;
     this.intLevel = Level;
     this.intLaneNumber = intLane;
     this.strParent = Parent;
   }
 
-  public String getFirstName(){
-    return strFirstName;
-  }
-
-  public String getLastName(){
-    return strLastName;
+  public int getAge() {
+    return intAge;
   }
 
   public int intGetLevel(){
