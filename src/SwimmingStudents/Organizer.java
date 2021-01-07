@@ -40,7 +40,7 @@ public class Organizer {
     String strFirstName5 = "";
     String strLastName5 = "";
     String strFirstName6 = "";
-    String strLastName4 = "";
+    String strLastName6 = "";
     int intAge = 0;
     int intAge1 = 0;
     int intAge2 = 0;
@@ -222,7 +222,26 @@ public class Organizer {
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
             }
-          } 
+          }else if(intMember == 14) {
+            strFirstName7 = strFirstName8;
+            strFirstName8 = strFirstName;
+            strLastName7 = strLastName8;
+            strLastName8 = strLastName;
+            intAge7 = intAge8;
+            intAge8 = intAge;
+            if(intRegistered == 14) {
+              Student1 = new Student(strFirstName8, strLastName8, 1, 1, intAge8); 
+              Parent2 = new Parent(strFirstName8, strLastName8, 1, 1);
+            }else {
+              Student1 = new Student(strFirstName7, strLastName7, 1, 1, intAge7); 
+              Parent2 = new Parent(strFirstName7, strLastName7, 1, 1);
+            }
+            if(strOption.equalsIgnoreCase("student")){
+              System.out.println(Student1);
+            }else if(strOption.equalsIgnoreCase("parent")){
+              System.out.println(Parent2);
+            }
+          }
           }else {
             System.out.println("Invalid. You will be bought back to the menu.");
           }
@@ -237,10 +256,10 @@ public class Organizer {
           if(intRegistered < 15) {
             Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
             System.out.println(Student1);
+            intRegistered++;
           }else {
             System.out.println("Sorry, there are too many people registered. Try again next time");
           }
-          intRegistered++;
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       // Runs code if user is a worker
