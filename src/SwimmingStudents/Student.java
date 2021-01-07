@@ -8,6 +8,7 @@ public class Student extends People {
   private int intAge;
   // Class variables
   private static String strInstructor = " ";
+  private static int intStudents = 10;
   
   /**
   * Constructor: Creates a new student Instance
@@ -34,6 +35,7 @@ public class Student extends People {
       strInstructor = "Jack";
     }else if(Level == 1) {
       strInstructor = "Kanye";
+      intStudents++;
     }
   }
 
@@ -44,6 +46,15 @@ public class Student extends People {
   public static String getInstructor() {
     return strInstructor;
   }
+
+  /**
+  * Getter method for intStudents
+  * @return instructor name 
+  */
+  public static int getStudents() {
+    return intStudents;
+  }
+
 
   /**
   * Getter method for intAge
@@ -62,6 +73,7 @@ public class Student extends People {
     System.out.println("Your Level is: " + this.getLevel());
     System.out.println("The Lane you are swimming is: " + this.getLane());
     System.out.println("Your instructor is: " + strInstructor); 
+    System.out.println("There are currentely this number of students: " + intStudents);
     return "Your Age is: " + intAge;
   }
 }
