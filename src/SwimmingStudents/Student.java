@@ -12,6 +12,9 @@ public class Student extends People {
   }
 
   public String toString() {
-    return "Your full name is: " + this.getFirstName() + " " + this.getLastName() + " Your Level is: " + this.getLevel() + " The Lane you are swimming is: " + this.getLane() + " Your Age is: " + this.intAge;
+    System.out.println("Your full name is: " + this.getFirstName() + " " + this.getLastName());
+    System.out.println("Your Level is: " + this.getLevel());
+    System.out.println("The Lane you are swimming is: " + this.getLane()); 
+    return " Your Age is: " + this.intAge;
   }
 }
