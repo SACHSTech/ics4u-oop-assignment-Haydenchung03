@@ -48,7 +48,6 @@ public class Organizer {
         if(strRegister.equalsIgnoreCase("no")) {
           // Registering a student into the system
           System.out.println("Since you have never registered in our swimming pool, you will start at level 1");
-          System.out.println("All beginner classes are free");
           System.out.println("What is your first name?");
           strFirstName = keyboard.readLine();
           System.out.println("What is your last name?");
