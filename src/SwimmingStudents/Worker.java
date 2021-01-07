@@ -2,8 +2,6 @@ package SwimmingStudents;
 
 import SwimmingStudents.*;
 
-import java.lang.Math;
-
 public class Worker extends People{
   
 
