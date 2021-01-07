@@ -11,6 +11,7 @@ public class People {
   private String strLastName;
   private int intLevel;
   private int intLaneNumber;
+  
   /**
   * Constructor: Creates a new person Instance
   * @param firstName - person's first name
