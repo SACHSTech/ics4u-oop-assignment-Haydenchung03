@@ -12,11 +12,11 @@ public class People {
     this.strLastName = lastName;
   }
 
-  public getFirstName() {
+  public String getFirstName() {
     return strFirstName;
   }
 
-  public getLastName() {
+  public String getLastName() {
     return strLastName;
   }
 }

@@ -1,7 +1,6 @@
 package SwimmingStudents;
 
 import SwimmingStudents.*;
-import java.lang.Math;
 
 public class Supervisor {
 
