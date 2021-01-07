@@ -10,8 +10,8 @@ public class Main {
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
     Student Student1;
-    Parent two;
-    Worker three;
+    Parent Parent2;
+    Worker Worker3;
 
     String strOption;
     boolean blnOption = true;
@@ -37,23 +37,23 @@ public class Main {
           intMember = Integer.parseInt(keyboard.readLine());
           if(intMember == 1) {
             Student1 = new Student("John", "Lau", 5, 2, 10);
-            two = new Parent("John", "Lau", 5, 2);
+            Parent2 = new Parent("John", "Lau", 5, 2);
             if(strOption.equalsIgnoreCase("student")){
-              System.out.println(one);
+              System.out.println(Student1);
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(two);
             }
           }else if(intMember == 2) {
             Student1 = new Student("Tom", "Cruise", 5, 2, 13); 
-            Parent two = new Parent("Tom", "Cruise", 5, 2);
+            Parent2 = new Parent("Tom", "Cruise", 5, 2);
             if(strOption.equalsIgnoreCase("student")){
-              System.out.println(one);
+              System.out.println(Student1);
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(two);
             }
           }else if(intMember == 3) {
             Student1 = new Student("Hayden", "Chung", 10, 1, 17); 
-            Parent two = new Parent("Hayden", "Chung", 10, 1);
+            Parent2 = new Parent("Hayden", "Chung", 10, 1);
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -61,7 +61,7 @@ public class Main {
             }
           }else if(intMember == 4) {
             Student1 = new Student("Timmy", "Smith", 6, 4, 12); 
-            Parent two = new Parent("Timmy", "Smith", 6, 4); 
+            Parent2 = new Parent("Timmy", "Smith", 6, 4); 
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -69,7 +69,7 @@ public class Main {
             }
           }else if(intMember == 5) {
             Student one = new Student("Dom", "George", 7, 5, 14); 
-            Parent two = new Parent("Dom", "George", 7, 5);
+            Parent2 = new Parent("Dom", "George", 7, 5);
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -77,7 +77,7 @@ public class Main {
             }
           }else if(intMember == 6) {
             Student1 = new Student("Myers", "James", 7, 5, 13); 
-            Parent two = new Parent("Myers", "James", 7, 5);
+            Parent2 = new Parent("Myers", "James", 7, 5);
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -85,7 +85,7 @@ public class Main {
             }
           }else if(intMember == 7) {
             Student1 = new Student("Lebron", "James", 9, 3, 19); 
-            Parent two = new Parent("Lebron", "James", 9, 3); 
+            Parent2 = new Parent("Lebron", "James", 9, 3); 
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -93,7 +93,7 @@ public class Main {
             }
           }else if(intMember == 8) {
             Student1 = new Student("Jimmy", "Lau", 6, 4, 13); 
-            Parent two = new Parent("Jimmy", "Lau", 6, 4); 
+            Parent2 = new Parent("Jimmy", "Lau", 6, 4); 
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -101,7 +101,7 @@ public class Main {
             }
           }else if(intMember == 9) {
             Student1 = new Student("Bronny", "JR", 10, 1, 17); 
-            Parent two = new Parent("Bronny", "JR", 10, 1); 
+            Parent2 = new Parent("Bronny", "JR", 10, 1); 
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -109,7 +109,7 @@ public class Main {
             }
           }else if(intMember == 10) {
             Student1 = new Student("Stephen", "Curry", 9, 3, 18); 
-            Parent two = new Parent("Stephen", "Curry", 9, 3); 
+            Parent2 = new Parent("Stephen", "Curry", 9, 3); 
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(one);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -124,7 +124,7 @@ public class Main {
           strLastName = keyboard.readLine();
           System.out.println("What is your age?");
           intAge = Integer.parseInt(keyboard.readLine());
-          Student one = new Student(strFirstName, strLastName, 1, 6, intAge);
+          Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
           System.out.println(one);
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
@@ -132,32 +132,32 @@ public class Main {
         System.out.println("Type a number between 1-8 to access information in our system");
         intWorker = Integer.parseInt(keyboard.readLine());
         if(intWorker == 1) {
-         Worker three = new Worker("Tommy", "Smithy", 0, 0, "lifeguard");
+         Worker3 = new Worker("Tommy", "Smithy", 0, 0, "lifeguard");
          System.out.println(three);
         }else if(intWorker == 2) {
-         Worker three = new Worker("Hayden", "Chung", 5, 2, "instructor and lifeguard");
+         Worker3 = new Worker("Hayden", "Chung", 5, 2, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 3) {
-         Worker three = new Worker("Tyler", "Polly", 6, 4, "instructor and lifeguard");
+         Worker3 = new Worker("Tyler", "Polly", 6, 4, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 4) {
-         Worker three = new Worker("Elizabeth", "Scotch", 0, 0, "supervisor");
+         Worker3 = new Worker("Elizabeth", "Scotch", 0, 0, "supervisor");
          System.out.println(three);
         }else if(intWorker == 5) {
-         Worker three = new Worker("Billy", "Curry", 9, 3, "instructor");
+         Worker3 = new Worker("Billy", "Curry", 9, 3, "instructor");
          System.out.println(three);
         }else if(intWorker == 6) {
-         Worker three = new Worker("Jack", "Smith", 10, 1, "instructor and lifeguard");
+         Worker3 = new Worker("Jack", "Smith", 10, 1, "instructor and lifeguard");
          System.out.println(three);
         }else if(intWorker == 7) {
-         Worker three = new Worker("Dominic", "SR", 7, 5, "instructor");
+         Worker3 = new Worker("Dominic", "SR", 7, 5, "instructor");
          System.out.println(three);
         }else if(intWorker == 8) {
-         Worker three = new Worker("Peke", "Chin", 5, 7, "supervisor");
+         Worker3 = new Worker("Peke", "Chin", 5, 7, "supervisor");
          System.out.println(three);
         }
       }else if(strOption.equalsIgnoreCase("Done")) {
-        System.out.println("Thank you!");
+        System.out.println("Program has quit");
         blnOption = false;
       }
     }
