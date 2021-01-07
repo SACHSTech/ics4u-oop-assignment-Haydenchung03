@@ -37,11 +37,17 @@ public class Organizer {
     String strLastName3 = "";
     String strFirstName4 = "";
     String strLastName4 = "";
+    String strFirstName5 = "";
+    String strLastName5 = "";
+    String strFirstName6 = "";
+    String strLastName4 = "";
     int intAge = 0;
     int intAge1 = 0;
     int intAge2 = 0;
     int intAge3 = 0;
     int intAge4 = 0;
+    int intAge5 = 0;
+    int intAge6 = 0;
 
     // Ask user if they are a student, worker or parent
     while(blnOption == true) {
@@ -166,8 +172,13 @@ public class Organizer {
             strLastName2 = strLastName;
             intAge1 = intAge2;
             intAge2 = intAge;
-            Student1 = new Student(strFirstName1, strLastName1, 1, 1, intAge1); 
-            Parent2 = new Parent(strFirstName1, strLastName1, 1, 1); 
+            if(intRegistered == 11) {
+              Student1 = new Student(strFirstName2, strLastName2, 1, 1, intAge2); 
+              Parent2 = new Parent(strFirstName2, strLastName2, 1, 1); 
+            }else {
+              Student1 = new Student(strFirstName1, strLastName1, 1, 1, intAge1); 
+              Parent2 = new Parent(strFirstName1, strLastName1, 1, 1); 
+            }
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(Student1);
             }else if(strOption.equalsIgnoreCase("parent")){
@@ -180,13 +191,38 @@ public class Organizer {
             strLastName4 = strLastName;
             intAge3 = intAge4;
             intAge4 = intAge;
-            Student1 = new Student(strFirstName3, strLastName3, 1, 1, intAge3); 
-            Parent2 = new Parent(strFirstName3, strLastName3, 1, 1); 
+            if(intRegistered == 12) {
+              Student1 = new Student(strFirstName4, strLastName4, 1, 1, intAge4); 
+              Parent2 = new Parent(strFirstName4, strLastName4, 1, 1);
+            }else {
+              Student1 = new Student(strFirstName3, strLastName3, 1, 1, intAge3); 
+              Parent2 = new Parent(strFirstName3, strLastName3, 1, 1);
+            }
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(Student1);
             }else if(strOption.equalsIgnoreCase("parent")){
               System.out.println(Parent2);
             }
+          }else if(intMember == 13) {
+            strFirstName5 = strFirstName6;
+            strFirstName6 = strFirstName;
+            strLastName4 = strLastName6;
+            strLastName6 = strLastName;
+            intAge5 = intAge6;
+            intAge6 = intAge;
+            if(intRegistered == 13) {
+              Student1 = new Student(strFirstName6, strLastName6, 1, 1, intAge6); 
+              Parent2 = new Parent(strFirstName6, strLastName6, 1, 1);
+            }else {
+              Student1 = new Student(strFirstName5, strLastName5, 1, 1, intAge5); 
+              Parent2 = new Parent(strFirstName5, strLastName5, 1, 1);
+            }
+            if(strOption.equalsIgnoreCase("student")){
+              System.out.println(Student1);
+            }else if(strOption.equalsIgnoreCase("parent")){
+              System.out.println(Parent2);
+            }
+          } 
           }else {
             System.out.println("Invalid. You will be bought back to the menu.");
           }
