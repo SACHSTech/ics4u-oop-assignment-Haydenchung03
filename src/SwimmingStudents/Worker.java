@@ -21,6 +21,7 @@ public class Worker extends People{
   public Worker(String firstName, String lastName, int Level, int intLane, String Position){
     super(firstName, lastName, Level, intLane);
     this.strPosition = Position;
+    // Pay is different depending on position
     if(strPosition.equalsIgnoreCase("supervisor")) {
       dblPay = 18.00;
     }else if(strPosition.equalsIgnoreCase("lifeguard")) {

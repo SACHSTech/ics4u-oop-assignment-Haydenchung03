@@ -23,6 +23,7 @@ public class Student extends People {
     super(firstName, lastName, Level, intLane);
     this.intAge = Age;
     // Conditions to see who the instructor is
+    // If user registers, total students goes up to 11
     if(Level == 5) {
       strInstructor = "Hayden";
     }else if(Level == 6) {
