@@ -68,7 +68,7 @@ public class Main {
               System.out.println(Parent2);
             }
           }else if(intMember == 5) {
-            Student one = new Student("Dom", "George", 7, 5, 14); 
+            Student1 = new Student("Dom", "George", 7, 5, 14); 
             Parent2 = new Parent("Dom", "George", 7, 5);
             if(strOption.equalsIgnoreCase("student")){
               System.out.println(Student1);
@@ -125,7 +125,7 @@ public class Main {
           System.out.println("What is your age?");
           intAge = Integer.parseInt(keyboard.readLine());
           Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
-          System.out.println(one);
+          System.out.println(Student1);
           System.out.println("You will not be visable on the list until you attend the first lesson");
         }
       }else if(strOption.equalsIgnoreCase("worker")) {
@@ -159,6 +159,8 @@ public class Main {
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Program has quit");
         blnOption = false;
+      }else {
+        System.out.println("Not an Option");
       }
     }
   }

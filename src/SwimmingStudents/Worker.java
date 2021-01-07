@@ -9,7 +9,7 @@ public class Worker extends People{
 
   
   private String strPosition;
-  private Double dblPay;
+  private static Double dblPay;
 
   
 
@@ -27,6 +27,10 @@ public class Worker extends People{
     }
   }
 
+  public static double getPay() {
+    return dblPay;
+  }
+  
   public String toString() {
     System.out.println("Your full name is: " + this.getFirstName() + " " + this.getLastName());
     if(strPosition.equalsIgnoreCase("instructor") || strPosition.equalsIgnoreCase("instructor and lifeguard")) {
