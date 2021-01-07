@@ -15,7 +15,7 @@ public class Main {
     String strLastName;
     while(blnOption == true) {
       System.out.println("Hi, welcome to swimming pool online orginizer");
-      System.out.println("Are you a: student, teacher, or supervisor");
+      System.out.println("Are you a: student or worker?");
       strOption = keyboard.readLine();
       if(strOption.equalsIgnoreCase("student")) {
         System.out.println("What is your first name");
@@ -29,12 +29,6 @@ public class Main {
         strFirstName = keyboard.readLine();
         System.out.println("What is your last name");
         strLastName = keyboard.readLine();
-      }else if(strOption.equalsIgnoreCase("supervisor")) {
-        System.out.println("What is your name");
-        strFirstName = keyboard.readLine();
-        System.out.println("What is your last name");
-        strLastName = keyboard.readLine();
-        Supervisor 
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
