@@ -2,7 +2,7 @@ package SwimmingStudents;
 
 import SwimmingStudents.*;
 
-public class Student extends People extends SwimClass{
+public class Student extends People {
 
   private int intAge;
   

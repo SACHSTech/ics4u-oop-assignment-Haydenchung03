@@ -23,6 +23,7 @@ public class Main {
         System.out.println("What is your last name");
         strLastName = keyboard.readLine();
         Student Hayden = new Student(strFirstName, strLastName, 5, 4, 17);
+        System.out.println(Hayden);
       }else if(strOption.equalsIgnoreCase("teacher")) {
         System.out.println("What is your fire name");
         strFirstName = keyboard.readLine();
@@ -33,6 +34,7 @@ public class Main {
         strFirstName = keyboard.readLine();
         System.out.println("What is your last name");
         strLastName = keyboard.readLine();
+        Supervisor 
       }else if(strOption.equalsIgnoreCase("Done")) {
         System.out.println("Goodbye!");
         blnOption = false;
