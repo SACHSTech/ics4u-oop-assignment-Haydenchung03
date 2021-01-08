@@ -58,6 +58,7 @@ public class Organizer {
           if(intRegistered <= 10) {
             Student1 = new Student(strFirstName, strLastName, 1, 6, intAge);
             System.out.println(Student1);
+            System.out.println("You're number to access info is number 11");
             intRegistered++;
           }else {
             System.out.println("Sorry, you can only register one student currentely due to covid restrictions. Try again next time.");

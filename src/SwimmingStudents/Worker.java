@@ -57,7 +57,7 @@ public class Worker extends People{
     System.out.println("Your full name is: " + this.getFirstName() + " " + this.getLastName());
     if(strPosition.equalsIgnoreCase("instructor") || strPosition.equalsIgnoreCase("instructor and lifeguard")) {
       System.out.println("You are teaching level: " + this.getLevel());
-      System.out.println("The are teaching in lane: " + this.getLane());
+      System.out.println("You are teaching in lane: " + this.getLane());
     }
     System.out.println("The positions you are qualified to work in are: " + strPosition);
     return "You are making this amount per hour in dollars: " + dblPay;
