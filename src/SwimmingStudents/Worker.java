@@ -18,7 +18,7 @@ public class Worker extends People{
   * @param intLane - person's lane number
   * @param Position - worker's position
   */
-  public Worker(String firstName, String lastName, int Level, int intLane, String Position){
+  public Worker(String firstName, String lastName, int Level, int intLane, String Position) {
     super(firstName, lastName, Level, intLane);
     this.strPosition = Position;
     // Pay is different depending on position

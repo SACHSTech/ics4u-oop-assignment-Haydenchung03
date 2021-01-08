@@ -72,91 +72,91 @@ public class Organizer {
           if(intMember == 1) {
             Student1 = new Student("John", "Lau", 5, 2, 10);
             Parent2 = new Parent("John", "Lau", 5, 2);
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 2) {
             Student1 = new Student("Tom", "Cruise", 5, 2, 13); 
             Parent2 = new Parent("Tom", "Cruise", 5, 2);
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 3) {
             Student1 = new Student("Hayden", "Chung", 10, 1, 17); 
             Parent2 = new Parent("Hayden", "Chung", 10, 1);
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 4) {
             Student1 = new Student("Timmy", "Smith", 6, 4, 12); 
             Parent2 = new Parent("Timmy", "Smith", 6, 4); 
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 5) {
             Student1 = new Student("Dom", "George", 7, 5, 14); 
             Parent2 = new Parent("Dom", "George", 7, 5);
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 6) {
             Student1 = new Student("Myers", "James", 7, 5, 13); 
             Parent2 = new Parent("Myers", "James", 7, 5);
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 7) {
             Student1 = new Student("Lebron", "James", 9, 3, 19); 
             Parent2 = new Parent("Lebron", "James", 9, 3); 
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 8) {
             Student1 = new Student("Jimmy", "Lau", 6, 4, 13); 
             Parent2 = new Parent("Jimmy", "Lau", 6, 4); 
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 9) {
             Student1 = new Student("Bronny", "JR", 10, 1, 17); 
             Parent2 = new Parent("Bronny", "JR", 10, 1); 
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 10) {
             Student1 = new Student("Stephen", "Curry", 9, 3, 18); 
             Parent2 = new Parent("Stephen", "Curry", 9, 3); 
-            if(strOption.equalsIgnoreCase("student")){
+            if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else if(intMember == 11) {
             Student1 = new Student(strFirstName, strLastName, 1, 1, intAge); 
             Parent2 = new Parent(strFirstName, strLastName, 1, 1); 
-            if(intRegistered != 11){
+            if(intRegistered != 11) {
               System.out.println("Slot is empty");
-            }else if(strOption.equalsIgnoreCase("student")){
+            }else if(strOption.equalsIgnoreCase("student")) {
               System.out.println(Student1);
-            }else if(strOption.equalsIgnoreCase("parent")){
+            }else if(strOption.equalsIgnoreCase("parent")) {
               System.out.println(Parent2);
             }
           }else {

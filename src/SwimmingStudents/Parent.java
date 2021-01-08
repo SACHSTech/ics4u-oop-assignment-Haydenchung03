@@ -14,12 +14,12 @@ public class Parent extends People {
   * @param Level - person's level in Swimming 
   * @param intLane - person's lane number
   */
-  public Parent(String firstName, String lastName, int Level, int intLane){
+  public Parent(String firstName, String lastName, int Level, int intLane) {
     super(firstName, lastName, Level, intLane);
     // Conditions to see the value of dblPrice
-    if(Level >= 1 && Level <= 7 ){
+    if(Level >= 1 && Level <= 7 ) {
       dblPrice = 400.0;
-    }else if(Level == 9 && Level == 10 ){
+    }else if(Level == 9 && Level == 10 ) {
       dblPrice = 450.0;
     }
   }
