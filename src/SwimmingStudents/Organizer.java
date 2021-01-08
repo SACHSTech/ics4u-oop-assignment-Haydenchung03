@@ -36,6 +36,7 @@ public class Organizer {
       // Instructions
       System.out.println("Hi, welcome to swimming pool online orginizer");
       System.out.println("Are you a student, worker or parent?");
+      System.out.println("Due to covid restrictions, you may only register one student as our pool is at maximum capacity");
       System.out.println("Type done if you are finished");
       strOption = keyboard.readLine();
       // if student or parent was typed, execute this if statement
@@ -150,8 +151,8 @@ public class Organizer {
               System.out.println(Parent2);
             }
           }else if(intMember == 11) {
-            Student1 = new Student(strFirstName, strLastName, 1, 1, intAge); 
-            Parent2 = new Parent(strFirstName, strLastName, 1, 1); 
+            Student1 = new Student(strFirstName, strLastName, 1, 6, intAge); 
+            Parent2 = new Parent(strFirstName, strLastName, 1, 6); 
             if(intRegistered != 11) {
               System.out.println("Slot is empty");
             }else if(strOption.equalsIgnoreCase("student")) {
